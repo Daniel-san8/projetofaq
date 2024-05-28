@@ -6,15 +6,38 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  background-image: url(/faq-accordion-main/assets/images/background-pattern-desktop.svg),
-    none;
-  background-size: 100%, 10%;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url(/faq-accordion-main/assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
   background-color: hsl(275, 100%, 97%);
 }
 
+.div-maior {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
 .div-principal {
-  display: none;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  padding: 1rem 2rem;
+  text-align: start;
+  flex-wrap: nowrap;
+}
+
+.faq-titulo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+h3 p {
+  font-size: 0.9rem;
 }
 
 .resposta {
