@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.div-principal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 4px;
+  text-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  padding: 0 15px 15px 15px;
+}
+
+.resposta {
+  display: none;
+}
