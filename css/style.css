@@ -9,11 +9,14 @@ body {
   background-image: url(/faq-accordion-main/assets/images/background-pattern-desktop.svg);
   background-repeat: no-repeat;
   background-color: hsl(275, 100%, 97%);
+  display: flex;
+  justify-content: center;
 }
 
 .div-maior {
   display: flex;
   justify-content: center;
+  height: 100vh;
   margin-top: 10rem;
 }
 
@@ -21,11 +24,12 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 50%;
+  justify-content: space-around;
+  width: 65%;
+  height: 70%;
   padding: 1rem 2rem;
-  text-align: start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  border-radius: 10px;
 }
 
 .faq-titulo {
@@ -37,7 +41,15 @@ body {
 }
 
 h3 p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+}
+
+.questions {
+  display: flex;
+  align-items: center;
+}
+
+.img-pergunta {
 }
 
 .resposta {
