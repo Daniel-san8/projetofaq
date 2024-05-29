@@ -25,11 +25,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 65%;
+  width: 70%;
   height: 70%;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   flex-wrap: wrap;
   border-radius: 10px;
+  position: relative;
 }
 
 .faq-titulo {
@@ -41,15 +42,23 @@ body {
 }
 
 h3 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .questions {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .img-pergunta {
+  position: absolute;
+  right: -30px;
+  top: -5px;
+}
+
+.img-pergunta:hover {
+  cursor: pointer;
 }
 
 .resposta {
