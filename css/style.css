@@ -28,6 +28,7 @@ body {
   width: 70%;
   height: 70%;
   padding: 1rem 2.5rem;
+  padding-right: 4rem;
   flex-wrap: wrap;
   border-radius: 10px;
   position: relative;
@@ -38,7 +39,7 @@ body {
   gap: 1rem;
   align-items: center;
   justify-content: flex-start;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h3 p {
@@ -46,9 +47,18 @@ h3 p {
 }
 
 .questions {
-  display: flex;
+  display: inline;
   align-items: center;
   position: relative;
+}
+
+.paragrafo-question {
+  display: inline;
+}
+
+.paragrafo-question:hover {
+  cursor: pointer;
+  color: #ad28eb;
 }
 
 .img-pergunta {
