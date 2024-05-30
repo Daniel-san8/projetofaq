@@ -65,6 +65,7 @@ h3 p {
   position: absolute;
   right: -30px;
   top: -5px;
+  display: inline;
 }
 
 .img-pergunta:hover {
@@ -72,5 +73,54 @@ h3 p {
 }
 
 .resposta {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 775px) {
+  .resposta {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 572px) {
+  .div-principal {
+    height: 85%;
+  }
+}
+
+@media (max-width: 463px) {
+  .div-principal {
+    height: calc(100% + 100px);
+    width: 60%;
+  }
+
+  .div-maior {
+    padding-bottom: 15rem;
+  }
+
+  .faq-titulo {
+    padding-bottom: 2rem;
+    align-self: center;
+  }
+}
+
+@media (max-width: 364px) {
+  .div-principal {
+    height: calc(100% + 200px);
+  }
+
+  .div-maior {
+    padding-bottom: 20rem;
+  }
+}
+
+@media (max-width: 312px) {
+  .div-principal {
+    height: calc(100% + 50%);
+  }
+
+  .div-maior {
+    padding-bottom: 30rem;
+  }
 }
