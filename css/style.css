@@ -68,12 +68,31 @@ h3 p {
   display: inline;
 }
 
+.img-pergunta.desativado {
+  display: none;
+}
+
 .img-pergunta:hover {
   cursor: pointer;
 }
 
+.minus {
+  position: absolute;
+  right: -30px;
+  top: -5px;
+  display: none;
+}
+
+.minus.ativo {
+  display: inline;
+}
+
+.minus:hover {
+  cursor: pointer;
+}
+
 .resposta {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
 }
 
