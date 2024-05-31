@@ -1,17 +1,21 @@
 export default function plusAnimation() {
   addEventListener("load", () => {
     const plus = document.querySelectorAll("[data-plus]");
+    const questions = document.querySelectorAll("[data-questions]");
     const dataPara = document.querySelectorAll("[data-para]");
-    const plusItemGlobal = Array.from(plus).map((item) => {
-      return item;
+    dataPara.forEach(function (itemPara) {
+      itemPara.addEventListener("click", function () {
+        const checked = this.nextElementSibling;
+        if (
+          checked.getAttribute("src") ===
+          "/faq-accordion-main/assets/images/icon-minus.svg"
+        ) {
+        }
+      });
     });
-    let i = 0;
-
-    console.log(plusItemGlobal[0]);
 
     //Função de click e ativação do minus
-
-    plus.forEach((plusItem) => {
+    plus.forEach(function (plusItem) {
       plusItem.addEventListener("click", () => {
         if (
           plusItem.getAttribute("src") ===
@@ -21,29 +25,13 @@ export default function plusAnimation() {
             "src",
             "/faq-accordion-main/assets/images/icon-minus.svg"
           );
+          plusItem.nextElementSibling.style.display = "inline-block";
         } else {
           plusItem.setAttribute(
             "src",
             "/faq-accordion-main/assets/images/icon-plus.svg"
           );
-        }
-      });
-    });
-    dataPara.forEach((itemPara) => {
-      itemPara.addEventListener("click", () => {
-        if (
-          plusItemGlobal[i].getAttribute("src") ===
-          "/faq-accordion-main/assets/images/icon-plus.svg"
-        ) {
-          plusItemGlobal[i].setAttribute(
-            "src",
-            "/faq-accordion-main/assets/images/icon-minus.svg"
-          );
-        } else {
-          plusItemGlobal[i].setAttribute(
-            "src",
-            "/faq-accordion-main/assets/images/icon-plus.svg"
-          );
+          plusItem.nextElementSibling.style.display = "none";
         }
       });
     });

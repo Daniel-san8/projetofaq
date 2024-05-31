@@ -93,7 +93,21 @@ h3 p {
 
 .resposta {
   display: none;
+  position: relative;
   flex-wrap: wrap;
+  padding-top: 1rem;
+  color: gray;
+  animation: respostaAnimation 0.5s forwards;
+  transition: 0.5s;
+}
+
+@keyframes respostaAnimation {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 6px;
+  }
 }
 
 @media (max-width: 775px) {
