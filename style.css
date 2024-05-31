@@ -117,13 +117,13 @@ h3 p {
   }
 }
 
-@media (max-width: 572px) {
+@media (max-width: 682px) {
   .div-principal {
     height: 85%;
   }
 }
 
-@media (max-width: 463px) {
+@media (max-width: 572px) {
   .div-principal {
     height: calc(100% + 100px);
     width: 60%;
@@ -139,7 +139,7 @@ h3 p {
   }
 }
 
-@media (max-width: 364px) {
+@media (max-width: 440px) {
   .div-principal {
     height: calc(100% + 200px);
   }
@@ -149,9 +149,9 @@ h3 p {
   }
 }
 
-@media (max-width: 312px) {
+@media (max-width: 314px) {
   .div-principal {
-    height: calc(100% + 50%);
+    height: calc(100% + 60%);
   }
 
   .div-maior {
