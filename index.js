@@ -1,3 +1,3 @@
-import plusAnimation from "./javascript/plusAnimation.js";
+import plusAnimation from "./plusAnimation.js";
 
 plusAnimation();
