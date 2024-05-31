@@ -25,7 +25,7 @@ export default function plusAnimation() {
             "src",
             "/faq-accordion-main/assets/images/icon-minus.svg"
           );
-          plusItem.nextElementSibling.style.display = "inline-block";
+          plusItem.nextElementSibling.style.display = "flex";
         } else {
           plusItem.setAttribute(
             "src",

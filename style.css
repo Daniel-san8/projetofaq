@@ -27,7 +27,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 70%;
-  height: 70%;
+  height: 75%;
   padding: 1rem 2.5rem;
   padding-right: 4rem;
   border-radius: 10px;
@@ -40,6 +40,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   font-weight: 700;
+  padding-bottom: 1.5rem;
 }
 
 h3 p {
@@ -106,7 +107,7 @@ h3 p {
     top: -10px;
   }
   to {
-    top: 6px;
+    top: 3px;
   }
 }
 
