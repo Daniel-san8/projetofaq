@@ -64,5 +64,17 @@ export default function plusAnimation() {
         }
       });
     });
+
+    paragrafos.forEach((itemPara) => {
+      itemPara.addEventListener("mouseenter", () => {
+        itemPara.style.color = "#ad28eb";
+      });
+    });
+
+    paragrafos.forEach((itemPara) => {
+      itemPara.addEventListener("mouseleave", () => {
+        itemPara.style.color = "black";
+      });
+    });
   });
 }
