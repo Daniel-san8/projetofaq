@@ -25,11 +25,11 @@ export default function plusAnimation() {
         if (plusItem.getAttribute("src") === "images/icon-plus.svg") {
           plusItem.setAttribute("src", "images/icon-minus.svg");
           plusItem.nextElementSibling.style.display = "flex";
-          plusItem.style.color = "#ad28eb";
+          plusItem.previousElementSibling.style.color = "#ad28eb";
         } else {
           plusItem.setAttribute("src", "images/icon-plus.svg");
           plusItem.nextElementSibling.style.display = "none";
-          plusItem.style.color = "black";
+          plusItem.previousElementSibling.style.color = "black";
         }
       });
     });
