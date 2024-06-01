@@ -71,10 +71,19 @@ export default function plusAnimation() {
       });
     });
 
-    //paragrafos.forEach((itemPara) => {
-    // itemPara.addEventListener("mouseleave", () => {
-    //itemPara.style.color = "black";
-    // });
-    //});
+    paragrafos.forEach((itemPara) => {
+      itemPara.addEventListener("mouseleave", () => {
+        const resposta = itemPara.nextElementSibling.nextElementSibling;
+        console.log(resposta == true);
+        if (
+          resposta.style.display === "none" &&
+          itemPara.style.color === "#ad28eb"
+        ) {
+          itemPara.style.color = "#ad28eb";
+        } else {
+          itemPara.style.color = "black";
+        }
+      });
+    });
   });
 }
