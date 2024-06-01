@@ -71,10 +71,10 @@ export default function plusAnimation() {
       });
     });
 
-    paragrafos.forEach((itemPara) => {
-      itemPara.addEventListener("mouseleave", () => {
-        itemPara.style.color = "black";
-      });
-    });
+    //paragrafos.forEach((itemPara) => {
+    // itemPara.addEventListener("mouseleave", () => {
+    //itemPara.style.color = "black";
+    // });
+    //});
   });
 }
