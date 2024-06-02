@@ -3,6 +3,7 @@ PROJETO FAQ ACCORDION
 
 Nesse projeto eu treinei um pouco das minhas habilidades de estilização com HTML e CSS e depois executei algumas animações com JS e manipulação de DOM.
 
+//VEJA O SITE: https://projetofaq-ghfc.vercel.app/
 
 Responsividade total
 
